@@ -1,14 +1,21 @@
-import React from 'react';
-import { SafeAreaView, Text, View } from 'react-native';
+import React from 'react'
+import { SafeAreaView , Text} from 'react-native'
+import FlatCard from './components/FlatCard'
+
 
 function App() {
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Hiiiiiii k chaa</Text>
-      </View>
-    </SafeAreaView>
-  );
+    
+      <SafeAreaView>
+
+        {/* <Text>Hiiiiiii k chaa</Text> */}
+
+
+        <FlatCard />
+
+      </SafeAreaView>
+    
+  )
 }
 
-export default App;
+export default App
