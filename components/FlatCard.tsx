@@ -3,56 +3,75 @@ import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
 
 const FlatCard = () => {
   return (
-    // <View style={styles.container}>
-    //   <Text style={styles.title}>Flat Card</Text>
-    //   <View style={styles.cardContainer}>
-    //     <View style={[styles.card, { backgroundColor: '#FF6F61' }]}>
-    //       <Text style={styles.cardText}>Card 1</Text>
-    //     </View>
-    //     <View style={[styles.card, { backgroundColor: '#6B8E23' }]}>
-    //       <Text style={styles.cardText}>Card 2</Text>
-    //     </View>
-    //     <View style={[styles.card, { backgroundColor: '#4682B4' }]}>
-    //       <Text style={styles.cardText}>Card 3</Text>
-    //     </View>
-    //   </View>
-    // </View>
+    <View>
 
-    <SafeAreaView>
-      <Text>OUUUUUGGGG</Text>
-    </SafeAreaView>
+      <Text style={styles.headingText}>Helloo k chaa</Text>
+    
+      <View style={styles.container}>
+
+        <View style={[styles.cardOne,styles.card]}>
+          <Text>RED</Text>
+        </View>
+
+        <View style={[styles.cardTwo,styles.card]}>
+          <Text>Green</Text>
+        </View>
+
+        <View style={[styles.cardThree,styles.card]}>
+          <Text>Blue</Text>
+        </View>
+
+        <View style={[styles.cardOne,styles.card]}>
+          <Text>RED</Text>
+        </View>
+
+
+        <View style={[styles.cardOne,styles.card]}>
+          <Text>RED</Text>
+        </View>
+
+        </View>
+
+    </View>
+
+
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    padding: 20,
-  },
-  title: {
-    fontSize: 20,
+
+  headingText : {
+    fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 10,
+    paddingHorizontal : 8,
+    textAlign: 'center'
   },
-  cardContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+
+  container:{
+      flex: 1,
+      flexDirection: 'row',
+      padding: 8
   },
   card: {
-    width: 100,
-    height: 100,
-    borderRadius: 10,
+    flex : 1,
     justifyContent: 'center',
     alignItems: 'center',
-    elevation: 5, // Shadow for Android
-    shadowColor: '#000', // Shadow for iOS
-    shadowOffset: { width: 1, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 4,
+      width: 110,
+      height: 100,
+      borderRadius: 4,
+      margin: 8
   },
-  cardText: {
-    color: 'white',
-    fontWeight: 'bold',
+
+  cardOne: {
+      backgroundColor: '#742717'
   },
+  cardTwo: {
+    backgroundColor: '#001aff'
+},
+cardThree: {
+  backgroundColor: '#00ff3c'
+}
+
 });
 
 export default FlatCard;

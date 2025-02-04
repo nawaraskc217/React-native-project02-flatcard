@@ -1,6 +1,7 @@
 import React from 'react'
-import { SafeAreaView , Text} from 'react-native'
+import { SafeAreaView , ScrollView, Text} from 'react-native'
 import FlatCard from './components/FlatCard'
+import ElevatedCards from './components/ElevatedCards'
 
 
 function App() {
@@ -8,10 +9,13 @@ function App() {
     
       <SafeAreaView>
 
-        {/* <Text>Hiiiiiii k chaa</Text> */}
+      <ScrollView>
 
+      <FlatCard />
+      <ElevatedCards/>
 
-        <FlatCard />
+      </ScrollView>
+    
 
       </SafeAreaView>
     
