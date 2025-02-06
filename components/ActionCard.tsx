@@ -1,5 +1,6 @@
 import { Image, Linking, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
+import { Colors } from 'react-native/Libraries/NewAppScreen'
 
 export default function ActionCard() {
 
@@ -51,7 +52,7 @@ export default function ActionCard() {
                             <TouchableOpacity 
                             onPress={()=>openWebsite(linkkk)}>
                                 
-                                <Text>
+                                <Text style={styles.socialLinks}>
                                     Follow Me
                                 </Text>
                             </TouchableOpacity>
@@ -71,29 +72,61 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     card: {
+        width: 350,
+        height: 400,
+        borderRadius: 6, 
+        marginVertical: 12,
+        marginHorizontal: 33
 
     },
 
     elevatedCard: {
+        backgroundColor: '#d9771c',
+        elevation: 3,
+        shadowOffset: {
+            width: 1, height: 1
+        },
+        shadowColor: '#333',
+        shadowOpacity: 0.4
 
     },
 
     headingContainer: {
+        height: 40,
+        flexDirection: 'row', 
+        justifyContent: 'center',
+        alignItems: 'center'
+
 
     },
     headerText:{
-
+            color:'#443a8a',
+            fontSize: 16,
+            fontWeight: '600'
     },
 
     cardImage:{
-        height: 100
+        height: 190
     },
     bodyContainer: {
+        padding: 10
 
     },
-    footerContainer:{},
+    footerContainer:{
+        padding:8,
+        flexDirection: 'row',
+        // gap: 10,
+        //  alignContent
+        alignItems: 'center',
+        justifyContent:'space-evenly'
+    },
     socialLinks: {
-        color: 'red'
+        color: 'black', fontSize: 16, backgroundColor: '#c8c5d9',
+        // padding: 
+        paddingHorizontal: 20,
+        paddingVertical:6,
+        borderRadius: 6
+        
     }
 
 })

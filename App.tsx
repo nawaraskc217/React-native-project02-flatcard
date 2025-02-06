@@ -4,19 +4,21 @@ import FlatCard from './components/FlatCard'
 import ElevatedCards from './components/ElevatedCards'
 import FancyCard from './components/FancyCard'
 import ActionCard from './components/ActionCard'
+import ContactList from './components/ContactList'
 
 
 function App() {
   return (
     
-      <SafeAreaView>
+      <SafeAreaView >
 
-      <ScrollView>
+      <ScrollView scrollEnabled={true}>
 
       <FlatCard />
       <ElevatedCards/>
       <FancyCard/>
       <ActionCard/>
+      <ContactList/>
 
       </ScrollView>
     

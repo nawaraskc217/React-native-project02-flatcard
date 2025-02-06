@@ -5,7 +5,7 @@ const FlatCard = () => {
   return (
     <View>
 
-      <Text style={styles.headingText}>Helloo k chaa</Text>
+      <Text style={styles.headingText}>FlatCard</Text>
     
       <View style={styles.container}>
 
